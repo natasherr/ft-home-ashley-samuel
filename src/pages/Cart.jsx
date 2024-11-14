@@ -5,7 +5,7 @@ export default function Cart() {
   const [totalPrice, setTotalPrice]= useState(0)
 
   useEffect(()=>{
-    fetch("http://localhost:3000/accessories")
+    fetch("https://ft-home-ashley-samuel.onrender.com/accessories")
      .then((res)=>res.json())
      .then((data)=>{
        // Initializing quantity to 1 if not present
