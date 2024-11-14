@@ -5,7 +5,7 @@ export default function Home(){
     const[searchQuery, setSearchQuery]= useState("")
 
     useEffect(()=>{
-        fetch("http://localhost:3000/accessories")
+        fetch("https://ft-home-ashley-samuel.onrender.com/accessories")
          .then((res)=> res.json())
          .then((data)=> {setAccessories(data)})
     },[])
