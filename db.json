@@ -1,0 +1,11 @@
+{
+    "accessories":[
+        {
+            "id":1,
+            "name":"Air Freshener",
+            "image":"https://auto-xpress.co.ke/wp-content/uploads/air-freshener-aroma-wood-anti-tobacco-6ml-wpv_210x280_center_center.jpg",
+            "price":"354"
+        },
+        {}
+    ]
+}
