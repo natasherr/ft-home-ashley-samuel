@@ -6,9 +6,9 @@ export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState(null); // For viewing and editing product details
   const [newProduct, setNewProduct] = useState({ name: "", price: "", image: "" }); // For creating new product
 
-  // Fetch accessories on component mount
+  // Fetching accessories 
   useEffect(() => {
-    fetch("http://localhost:3000/accessories")
+    fetch("https://ft-home-ashley-samuel-1.onrender.com/accessories")
       .then((res) => res.json())
       .then((data) => setAccessories(data));
   }, []);
@@ -58,7 +58,7 @@ export default function Home() {
   // Handle new product submission
   const handleCreateNewProduct = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/accessories", {
+    fetch("https://ft-home-ashley-samuel-1.onrender.com/accessories", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -88,7 +88,7 @@ export default function Home() {
   // Handle saving edited product details
   const handleSaveEdit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/accessories/${selectedProduct.id}`, {
+    fetch(`https://ft-home-ashley-samuel-1.onrender.com/accessories/${selectedProduct.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

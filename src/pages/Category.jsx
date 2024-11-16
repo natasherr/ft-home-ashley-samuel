@@ -6,7 +6,7 @@ export default function Category() {
     const [accessories, setAccessories] = useState([])
 
     useEffect(() => {
-        fetch(`https://ft-home-ashley-samuel.onrender.com/accessories/${category}`)
+        fetch(`https://ft-home-ashley-samuel-1.onrender.com/accessories/${category}`)
             .then(response => response.json())
             .then(data => setAccessories(data))
     }, [category])
