@@ -47,7 +47,7 @@ const Cart = () => {
   );
 
   return (
-    <div className="container mt-4">
+    <div className="container md-4">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty. Start shopping!</p>
@@ -55,7 +55,7 @@ const Cart = () => {
         <>
           <div className="row">
             {cartItems.map((item) => (
-              <div key={item.id} className="col-md-4 border p-3">
+              <div key={item.id} >
                 <img
                   src={item.image}
                   alt={item.name}
@@ -90,7 +90,7 @@ const Cart = () => {
                 </div>
 
                 <p>
-                  Subtotal: ${(item.price * item.quantity).toFixed(2)}
+                  Subtotal: Ksh. {(item.price * item.quantity).toFixed(2)}
                 </p>
                 <button
                   className="btn btn-danger"
@@ -102,7 +102,7 @@ const Cart = () => {
             ))}
           </div>
           <div className="mt-4 d-flex justify-content-between">
-            <h4>Total: ${totalPrice.toFixed(2)}</h4>
+            <h4>Total: Ksh. {totalPrice.toFixed(2)}</h4>
             <button
               className="btn btn-primary"
               onClick={() => alert("Proceeding to checkout...")}

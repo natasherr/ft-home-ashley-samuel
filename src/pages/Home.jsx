@@ -158,7 +158,7 @@ export default function Home() {
       <div className="container mx-auto row">
         {filteredAccessories.length > 0 ? (
           filteredAccessories.map((accessory) => (
-            <div key={accessory.id} className="col-md-4 mb-3">
+            <div key={accessory.id} >
               <div className="card">
                 <img
                   src={accessory.image}
@@ -167,7 +167,7 @@ export default function Home() {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{accessory.name}</h5>
-                  <p className="card-text">Price: ${accessory.price}</p>
+                  <p className="card-text">Price: Ksh .{accessory.price}</p>
                   <button
                     className="btn btn-primary"
                     onClick={() => handleAddToCart(accessory)}
