@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
@@ -26,5 +27,18 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
-  }
+  },
+  "description": "CAR ACCESSORIES APPLICATION - SAMUEL GITAU AND ASHLEY NATASHA",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natasherr/ft-home-ashley-samuel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natasherr/ft-home-ashley-samuel/issues"
+  },
+  "homepage": "https://github.com/natasherr/ft-home-ashley-samuel#readme"
 }
