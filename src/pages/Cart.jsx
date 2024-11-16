@@ -63,7 +63,7 @@ const Cart = () => {
                   style={{ maxHeight: "200px", objectFit: "contain" }}
                 />
                 <h4>{item.name}</h4>
-                <h5>${item.price.toFixed(2)}</h5>
+                <h5>${item.price}</h5>
 
                 <div className="d-flex align-items-center mb-2">
                   <button
