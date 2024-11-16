@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 export default function Home() {
   const [accessories, setAccessories] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -226,3 +225,4 @@ export default function Home() {
     </div>
   );
 }
+
