@@ -32,5 +32,6 @@ Bootstrap
 Future Plans
 Implement add to add comment section to allow users to give their views .
 
-[Netlify Link](https://magenta-strudel-4eaee3.netlify.app/)
-[Render Link](https://ft-home-ashley-samuel.onrender.com)
+[Netlify Link](https://papaya-froyo-d19c35.netlify.app/)
+[Render Link](https://ft-home-ashley-samuel-1.onrender.com)
+[Slides Link](https://docs.google.com/presentation/d/1ouonWrkXfd6SOSqigMJP4VGS86pJBorEsuDfIRJN_0c/edit?usp=sharing)
