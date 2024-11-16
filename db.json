@@ -1,125 +1,130 @@
 {
-    "accessories":[
-        {
-            "id":1,
-            "name":"Air Freshener",
-            "image":"https://auto-xpress.co.ke/wp-content/uploads/air-freshener-aroma-wood-anti-tobacco-6ml-wpv_210x280_center_center.jpg",
-            "price":354
-        },
-        {
-            "id": 2,
-            "name":"GPS Navigator",
-            "image":"https://static.wixstatic.com/media/a9cd66_80d44311fd264eba85c892bd6643abd7~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_80d44311fd264eba85c892bd6643abd7~mv2.webp",
-            "price":600
-        },
-        {
-            "id":3,
-            "name":"Dash Camera",
-            "image": "https://static.wixstatic.com/media/a9cd66_ee59aa6baa394395835a2aca5fa8cc11~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_ee59aa6baa394395835a2aca5fa8cc11~mv2.webp",
-            "price":760
-        },
-        {
-            "id":4,
-            "name":"Neck/Back Support",
-            "image":"https://static.wixstatic.com/media/a9cd66_b0010a7e99af475b8732bd7f57c109df~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_b0010a7e99af475b8732bd7f57c109df~mv2.webp",
-            "price":900
-        },
-        {
-            "id":5,
-            "name":"Phone Mount",
-            "image": "https://static.wixstatic.com/media/a9cd66_3061131c9718472db922ac93bb8ce5c8~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3061131c9718472db922ac93bb8ce5c8~mv2.webp",
-            "price":600
-        },
-        {
-            "id":6,
-            "name":"Car Seat Cover",
-            "image":"https://static.wixstatic.com/media/a9cd66_0a625af6dc6b47ef81c436ed35507508~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_0a625af6dc6b47ef81c436ed35507508~mv2.webp",
-            "price":1500
-        },
-        {
-            "id":7,
-            "name":"Cup Holder",
-            "image":"https://static.wixstatic.com/media/a9cd66_14a825aa8ac24fd791a2cd2ea720c278~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_14a825aa8ac24fd791a2cd2ea720c278~mv2.webp",
-            "price":850
-        },
-        {
-            "id":8,
-            "name":"Steer Knob",
-            "image":"https://static.wixstatic.com/media/a9cd66_8d735550de8a4d67be39bf354e508697~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_8d735550de8a4d67be39bf354e508697~mv2.webp",
-            "price":600
-        },
-        {
-            "id":9,
-            "name":"Steering Cover",
-            "image":"https://static.wixstatic.com/media/a9cd66_feaea8372fb5446db00776c77b4ea22f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_feaea8372fb5446db00776c77b4ea22f~mv2.webp",
-            "price":800
-        },
-        {
-            "id":10,
-            "name":"Car Grill",
-            "image":"https://static.wixstatic.com/media/a9cd66_0a54d572c709494cb671b6b5e0f0991f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_0a54d572c709494cb671b6b5e0f0991f~mv2.webp",
-            "price":1200
-        },
-        {
-            "id":11,
-            "name":"Bull Bars",
-            "image":"https://static.wixstatic.com/media/a9cd66_3ef7556b48964637ad0cc72a7dce83a2~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3ef7556b48964637ad0cc72a7dce83a2~mv2.webp",
-            "price":2000
-        },
-        {
-            "id":12,
-            "name":"Car Cover",
-            "image":"https://static.wixstatic.com/media/a9cd66_7fb9e7078047481bad23d47922988a4a~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_7fb9e7078047481bad23d47922988a4a~mv2.webp",
-            "price":3000
-        },
-        {
-            "id":13,
-            "name":"Spoilers",
-            "image":"https://static.wixstatic.com/media/a9cd66_475cf646d89540c09a210d8cd730b6f6~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_475cf646d89540c09a210d8cd730b6f6~mv2.webp",
-            "price":4500
-        },
-        {
-            "id":14,
-            "name":"Windshield Cover",
-            "image":"https://static.wixstatic.com/media/a9cd66_df19375df6c44daead7cd12338125e9e~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_df19375df6c44daead7cd12338125e9e~mv2.webp",
-            "price":2000
-        },
-        {
-            "id":15,
-            "name":"Blind Spot Mirror",
-            "image":"https://static.wixstatic.com/media/a9cd66_6d7a330660e44ba79c21a567d15413f2~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_6d7a330660e44ba79c21a567d15413f2~mv2.webp",
-            "price":750
-        },
-        {
-            "id":16,
-            "name":"Window Roll-Up Tint",
-            "image":"https://static.wixstatic.com/media/a9cd66_2b18c57b8c164ed187f6b2e1df281e5f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_2b18c57b8c164ed187f6b2e1df281e5f~mv2.webp",
-            "price":1200
-        },
-        {
-            "id":17,
-            "name":"Parking Sensors",
-            "image":"https://static.wixstatic.com/media/a9cd66_b0b55f51636a42409919075b50745489~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_b0b55f51636a42409919075b50745489~mv2.webp",
-            "price":3000
-        },
-        {
-            "id":18,
-            "name":"Claw Mark Decals",
-            "image":"https://static.wixstatic.com/media/a9cd66_f07b362719d94d0eb7498e8f56bc35fa~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_f07b362719d94d0eb7498e8f56bc35fa~mv2.webp",
-            "price":3000
-        },
-        {
-            "id":19,
-            "name":"Car Wheel Cover",
-            "image":"https://static.wixstatic.com/media/a9cd66_3d9268aedb98469dbc9b507195642391~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3d9268aedb98469dbc9b507195642391~mv2.webp",
-            "price":1500
-        },
-        {
-            "id":20,
-            "name":"Car Wrap",
-            "image":"https://static.wixstatic.com/media/a9cd66_ed564f993c384d15909d3ce144b038f2~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_ed564f993c384d15909d3ce144b038f2~mv2.webp",
-            "price":5000
-        }
-        
-    ]
+  "accessories": [
+    {
+      "id": "1",
+      "name": "Air Freshener",
+      "image": "https://auto-xpress.co.ke/wp-content/uploads/air-freshener-aroma-wood-anti-tobacco-6ml-wpv_210x280_center_center.jpg",
+      "price": 354
+    },
+    {
+      "id": "2",
+      "name": "GPS Navigator",
+      "image": "https://static.wixstatic.com/media/a9cd66_80d44311fd264eba85c892bd6643abd7~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_80d44311fd264eba85c892bd6643abd7~mv2.webp",
+      "price": 600
+    },
+    {
+      "id": "3",
+      "name": "Dash Camera",
+      "image": "https://static.wixstatic.com/media/a9cd66_ee59aa6baa394395835a2aca5fa8cc11~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_ee59aa6baa394395835a2aca5fa8cc11~mv2.webp",
+      "price": 760
+    },
+    {
+      "id": "4",
+      "name": "Neck/Back Support",
+      "image": "https://static.wixstatic.com/media/a9cd66_b0010a7e99af475b8732bd7f57c109df~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_b0010a7e99af475b8732bd7f57c109df~mv2.webp",
+      "price": 900
+    },
+    {
+      "id": "5",
+      "name": "Phone Mount",
+      "image": "https://static.wixstatic.com/media/a9cd66_3061131c9718472db922ac93bb8ce5c8~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3061131c9718472db922ac93bb8ce5c8~mv2.webp",
+      "price": 600
+    },
+    {
+      "id": "6",
+      "name": "Car Seat Cover",
+      "image": "https://static.wixstatic.com/media/a9cd66_0a625af6dc6b47ef81c436ed35507508~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_0a625af6dc6b47ef81c436ed35507508~mv2.webp",
+      "price": 1500
+    },
+    {
+      "id": "7",
+      "name": "Cup Holder",
+      "image": "https://static.wixstatic.com/media/a9cd66_14a825aa8ac24fd791a2cd2ea720c278~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_14a825aa8ac24fd791a2cd2ea720c278~mv2.webp",
+      "price": 850
+    },
+    {
+      "id": "8",
+      "name": "Steer Knob",
+      "image": "https://static.wixstatic.com/media/a9cd66_8d735550de8a4d67be39bf354e508697~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_8d735550de8a4d67be39bf354e508697~mv2.webp",
+      "price": 600
+    },
+    {
+      "id": "9",
+      "name": "Steering Cover",
+      "image": "https://static.wixstatic.com/media/a9cd66_feaea8372fb5446db00776c77b4ea22f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_feaea8372fb5446db00776c77b4ea22f~mv2.webp",
+      "price": 800
+    },
+    {
+      "id": "10",
+      "name": "Car Grill",
+      "image": "https://static.wixstatic.com/media/a9cd66_0a54d572c709494cb671b6b5e0f0991f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_0a54d572c709494cb671b6b5e0f0991f~mv2.webp",
+      "price": 1200
+    },
+    {
+      "id": "11",
+      "name": "Bull Bars",
+      "image": "https://static.wixstatic.com/media/a9cd66_3ef7556b48964637ad0cc72a7dce83a2~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3ef7556b48964637ad0cc72a7dce83a2~mv2.webp",
+      "price": 2000
+    },
+    {
+      "id": "12",
+      "name": "Car Cover",
+      "image": "https://static.wixstatic.com/media/a9cd66_7fb9e7078047481bad23d47922988a4a~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_7fb9e7078047481bad23d47922988a4a~mv2.webp",
+      "price": 3000
+    },
+    {
+      "id": "13",
+      "name": "Spoilers",
+      "image": "https://static.wixstatic.com/media/a9cd66_475cf646d89540c09a210d8cd730b6f6~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_475cf646d89540c09a210d8cd730b6f6~mv2.webp",
+      "price": 4500
+    },
+    {
+      "id": "14",
+      "name": "Windshield Cover",
+      "image": "https://static.wixstatic.com/media/a9cd66_df19375df6c44daead7cd12338125e9e~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_df19375df6c44daead7cd12338125e9e~mv2.webp",
+      "price": 2000
+    },
+    {
+      "id": "15",
+      "name": "Blind Spot Mirror",
+      "image": "https://static.wixstatic.com/media/a9cd66_6d7a330660e44ba79c21a567d15413f2~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_6d7a330660e44ba79c21a567d15413f2~mv2.webp",
+      "price": 750
+    },
+    {
+      "id": "16",
+      "name": "Window Roll-Up Tint",
+      "image": "https://static.wixstatic.com/media/a9cd66_2b18c57b8c164ed187f6b2e1df281e5f~mv2.webp/v1/fill/w_940,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9cd66_2b18c57b8c164ed187f6b2e1df281e5f~mv2.webp",
+      "price": 1200
+    },
+    {
+      "id": "17",
+      "name": "Parking Sensors",
+      "image": "https://static.wixstatic.com/media/a9cd66_b0b55f51636a42409919075b50745489~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_b0b55f51636a42409919075b50745489~mv2.webp",
+      "price": 3000
+    },
+    {
+      "id": "18",
+      "name": "Claw Mark Decals",
+      "image": "https://static.wixstatic.com/media/a9cd66_f07b362719d94d0eb7498e8f56bc35fa~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_f07b362719d94d0eb7498e8f56bc35fa~mv2.webp",
+      "price": 3000
+    },
+    {
+      "id": "19",
+      "name": "Car Wheel Cover",
+      "image": "https://static.wixstatic.com/media/a9cd66_3d9268aedb98469dbc9b507195642391~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_3d9268aedb98469dbc9b507195642391~mv2.webp",
+      "price": 1500
+    },
+    {
+      "id": "20",
+      "name": "Car Wrap",
+      "image": "https://static.wixstatic.com/media/a9cd66_ed564f993c384d15909d3ce144b038f2~mv2.webp/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a9cd66_ed564f993c384d15909d3ce144b038f2~mv2.webp",
+      "price": 5000
+    },
+    {
+      "id": "5f9c",
+      "name": "Andygitau",
+      "price": "56",
+      "image": "data:image/webp;base64,UklGRmQYAABXRUJQVlA4IFgYAACwbQCdASrwAPAAPq1Qn0wmJKotKJc7YaAViU28CLWuiH745zni6h7RpuNF6ZWSZHfyT4Hx08j/tnOjgx7hTzU+dX6Vf7xvtv7gew10xs/oKR7Z3aX8xNQh9naL4V+DPiAcEJ6h7Av83/w/rH/7Xkw/a/UW6VvowfsydsQRwwY2KV73nktcpj8Aq7Yly1wGkIYAxulFZ1FjFE8f8L+fKV+Ay/3NAek3mWa1eaeHuhGXyLLLFssWSywRSV/G2Cmobktc9tiYYRhYmCpjPa8gBSlXAl8S78b5kBieHBFJ9S0k+QcoCT9W9sDr1+UZpYass9vBYMylXIepfm6tJ7BiKsQsD9K8V7XekFBsmbfm/SoaqbAeHptqWpzbRVmynJWVRv+uo6JZDEH3sI7J6+yCJL12UxIe5alJXSFlSgA+9zKknxdj9dOYuUd/LjJ1MLX8kfcElvx04VJM89T9krkvuMhhctxAt5sO0znsMpnjcc9+7smQrH610hPxtkPSLKRwOKaq62h+M49neK8FJUFTNHXqTk9OYoCSKN7THew7PM+8IUnMz0MUZTPAMd6Ky11u3kciRVZNpy3vBR/43oecOKilH6xAU4hRB2Yw6yDlrqRGUE8vr/ItHZzh1bk615sO/On0VFYaw9cwSioJdvycO6Xgcw3BFCMgj0KvF9d8RmyLm3bR2IjWDzvnkXEdgxe++FO7m5o7uxOYKbaQKnHSA3n+ZHBai/GKOPvNtWVS3UZ6VP6tf4WKcgNG9dNfuwGtyg2lrtGfIUEp9DYvLYgn3PTItumgoi8eqy8TW43q8R1nVRutq4Tj9gNPJ+aJZQgCZ1HpXjVQ42GUiZ7HaKnnSFPtZ8DV4/peD3vqFL1oUIalAVtXg9p6vFoY6w+I4pjwVQRrBDdAVtkdUI67S7gl+uzQVVkRgJO6A37tb1Rge2FMnTUkpPWjKSaZSW6OuravSBKxIMMeWFtfzoRiv"
+    }
+  ]
 }

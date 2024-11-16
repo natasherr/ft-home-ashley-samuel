@@ -1,86 +1,119 @@
-import React, { useState, useEffect } from 'react';
-export default function Cart() {
-  // Sample cart data with images added
-  const [cartItems, setCartItems] = useState([])
-  const [totalPrice, setTotalPrice]= useState(0)
+import React, { useState, useEffect } from "react";
 
-  useEffect(()=>{
-    fetch("https://ft-home-ashley-samuel.onrender.com/accessories")
-     .then((res)=>res.json())
-     .then((data)=>{
-       // Initializing quantity to 1 if not present
-              const itemsWithQuantity = data.map(item => ({ ...item, quantity: item.quantity || 1 }));
-              setCartItems(itemsWithQuantity)
-     })
-  },[])
+const Cart = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  // Load cart items from localStorage on component mount
+  const loadCartItems = () => {
+    try {
+      const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+      if (Array.isArray(storedCart)) {
+        setCartItems(storedCart);
+      } else {
+        localStorage.removeItem("cart");
+      }
+    } catch (error) {
+      console.error("Error loading cart:", error);
+    }
+  };
 
   useEffect(() => {
-      // Calculate total price whenever cartItems change
-      const total = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-      setTotalPrice(total);
-    }, [cartItems])
+    loadCartItems();
+  }, []);
 
-  // Handle quantity change
+  // Remove an item from the cart
+  const removeFromCart = (id) => {
+    const updatedCart = cartItems.filter((item) => item.id !== id);
+    setCartItems(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
+  // Update the quantity of an item in the cart
   const updateQuantity = (id, quantity) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
-      )
+    if (quantity < 1 || isNaN(quantity)) {
+      return; // Prevent invalid quantity
+    }
+    const updatedCart = cartItems.map((item) =>
+      item.id === id ? { ...item, quantity } : item
     );
+    setCartItems(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
-  // Remove item from cart
-  const removeItem = (id) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
-  };
+  // Calculate total price
+  const totalPrice = cartItems.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-4">
       <h2>Your Cart</h2>
-      <div className="row">
-        {/* Checking if cart is empty */}
-        {cartItems.length === 0 ? (
-          <p>Your cart is empty.</p>
-        ) : (
-          <div className="col-12">
-            {/* Cart items */}
-            {cartItems.map((item, index) => (
-              <div key={index} className="d-flex justify-content-between align-items-center border p-3 mb-3">
-                <div className="d-flex">
-                  <img src={item.image} alt={item.name} style={{ width: '100px', height: 'auto', marginRight: '15px' }} />
-                  <div>
-                  <h5>{item.name}</h5>
-                  <p>Price:Ksh. {item.price}</p>
-                  <label>
-                    Quantity:
-                    <input
-                      type="number"
-                      value={item.quantity}
-                      min="1"
-                      onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                      style={{ width: '60px', marginLeft: '10px' }}
-                    />
-                  </label>
-                </div>
-              </div>
-              <div>
-            <button className="btn btn-danger" onClick={() => removeItem(item.id)}>
-                 Remove
-             </button>
-              </div>
-            </div>
-            ))}
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty. Start shopping!</p>
+      ) : (
+        <>
+          <div className="row">
+            {cartItems.map((item) => (
+              <div key={item.id} className="col-md-4 border p-3">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="img-fluid mb-2"
+                  style={{ maxHeight: "200px", objectFit: "contain" }}
+                />
+                <h4>{item.name}</h4>
+                <h5>${item.price.toFixed(2)}</h5>
 
-            {/* Total price */}
-            <div className="d-flex justify-content-between align-items-center mt-4">
-              <h4>Total Price: {totalPrice}</h4>
-            </div>
-            <div>
-              <button className="btn btn-success">Proceed To Checkout</button>
-            </div>
+                <div className="d-flex align-items-center mb-2">
+                  <button
+                    className="btn btn-secondary me-2"
+                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    min="1"
+                    className="form-control w-25"
+                    value={item.quantity}
+                    onChange={(e) =>
+                      updateQuantity(item.id, parseInt(e.target.value, 10))
+                    }
+                  />
+                  <button
+                    className="btn btn-secondary ms-2"
+                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                  >
+                    +
+                  </button>
+                </div>
+
+                <p>
+                  Subtotal: ${(item.price * item.quantity).toFixed(2)}
+                </p>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => removeFromCart(item.id)}
+                >
+                  Remove
+                </button>
+              </div>
+            ))}
           </div>
-        )}
-      </div>
+          <div className="mt-4 d-flex justify-content-between">
+            <h4>Total: ${totalPrice.toFixed(2)}</h4>
+            <button
+              className="btn btn-primary"
+              onClick={() => alert("Proceeding to checkout...")}
+            >
+              Proceed to Checkout
+            </button>
+          </div>
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
+
+export default Cart;
